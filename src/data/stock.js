@@ -98,7 +98,7 @@ export const stock = [
         plataformas: "Xbox One / PlayStation 4 / PC",
         empresa: "Codemasters",
         lanzamiento: "06-11-2020",
-        sinopsis: "DiRT 5 es la nueva entrega de la saga de conducción arcade y directa de Codemasters enfocada a la competición rally y offroad. En esta secuela, pensada también para consolas como Xbox Series S/X y PlayStation 5 además de PC y otras plataformas, se ofrecen los vehículos más diversos de cualquier entrega DiRT, con sprint cars de 900 CV, rock bouncers, prerunners, y, por supuesto, los vehículos de rally tradicionales y modernos. Además, se ha apostado por la diversidad de circuitos, condiciones climatológicas y modos de juego.",
+        sinopsis: "DiRT 5 es la nueva entrega de la saga de conducción arcade y directa de Codemasters enfocada a la competición rally y offroad. En esta secuela, pensada también para consolas como Xbox Series S/X y PlayStation 5 además de PC y otras plataformas, se ofrecen los vehículos más diversos de cualquier entrega DiRT, con sprint cars de 900 CV, rock bouncers, prerunners, y, por supuesto, los vehículos de rally tradicionales y modernos.",
         precio: 3200,
         desc: "La entrega automovilistica mas pulida del año.",
         img: "https://image.api.playstation.com/vulcan/ap/rnd/202011/0410/lgFOPbIfo8drXkCanV89CdYC.jpg"
