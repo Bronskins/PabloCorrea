@@ -18,7 +18,7 @@ export const ItemDetail = ({sinopsis, empresa, plataformas, lanzamiento, categor
                         <li><span>Plataformas:</span> {plataformas}</li>
                     </ul>
 
-                    <h1 className="price w-50 text-center m-auto mt-4 mb-5">${precio} ARS</h1>
+                    <h1 className="price w-50 text-center m-auto mt-5 mb-5">${precio} ARS</h1>
                     <div className="d-flex justify-content-sm-evenly align-items-center w-100">
                         <Link to={`/`} className="agregar btn btn-warning w-50 text-uppercase fw-bold">AGREGAR AL CARRITO</Link>
                         <Link to={`/`} className="agregar btn btn-primary w-25 text-uppercase fw-bold">Volver</Link>
