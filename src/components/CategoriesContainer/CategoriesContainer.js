@@ -25,7 +25,7 @@ export const CategoriesContainer = () => {
         // Cuando el item se convierta en TRUE, mostrara el componente ItemDetail
         // Envio por PROPS el objeto ITEM, usando un spread.
         <div className="container-categorias">
-            <h2>CATEGORIAS</h2>
+            <h2 className="headerr">CATEGORIAS</h2>
             <hr className="text-info p-1 w-75"/>
             <Categories {...item}/>
             <hr className="text-info p-1 w-75"/>

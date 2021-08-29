@@ -8,8 +8,7 @@ export const ItemList = ({productos}) => {
 
         <section className="container-lg d-flex my-5 flex-column">
 
-            <h2 className='text-center text-uppercase text-light'>Juegos más vendidos</h2>
-            <hr className="text-info p-1"/>
+            <h2 className='headerr text-center text-uppercase text-light mb-5'>Juegos más vendidos</h2>
 
             <div className="row justify-content-center"> 
                 
