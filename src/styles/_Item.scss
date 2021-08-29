@@ -6,12 +6,13 @@
 .container-lg{
     opacity: 1;
     animation-name: opacityIn;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: backwards; 
 }
+
 .container-lg .row .card .card-body .card-title{
     font-family: 'Bungee Inline', cursive;
     font-size: 20px;
@@ -86,6 +87,31 @@
 
 }
 
+span{
+    color: rgba(255, 195, 82, 0.918);
+}
+
+.div-text{
+    animation-name: opacityIn;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    padding: 0 25px;
+    animation-fill-mode: backwards;
+    border: 3px solid black; 
+    background: rgba(19, 19, 19, 0.685);
+    height: 750px;
+    border-radius: 5px;
+    ;
+}
+
+#root .div-text h2 {
+   font-size: 30px; 
+   color: rgba(255, 195, 82, 0.918);
+   text-align: center;
+   margin: 60px 0;
+}
+
 .showcase{
     width: 500px;
     height: 750px;
@@ -93,7 +119,11 @@
     border: 3px solid black;
     box-shadow: 0px 0px 30px black;
     border-radius: 5px;
-
+    animation: appear 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards; 
     &-container{
         margin: 30px 0;
 
@@ -101,16 +131,26 @@
         & p {
             color: white;
             font-family: 'Bungee Inline', cursive;
+
         }
 
         & p {
-            font-size: 20px;
+            font-size: 17px;
+            text-shadow: 0px 0px 10px black;
+            text-align:left;
+            padding-left: 2rem;
         }
 
         & h2 {
             font-size: 100px;
             margin: 30px;
             text-shadow: 0px 0px 15px black;
+            animation: opacityIn;
+            animation-delay: 0s;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: backwards; 
         }
     }
 }
@@ -122,4 +162,21 @@
 
 .agregar{
     box-shadow: 0px 0px 10px black;
+}
+
+ul li {
+    font-family: 'Bungee Inline', cursive;
+    list-style: none;
+    color: white;
+    margin: 10px 0;
+    padding: 0;
+    text-shadow: 0px 0px 10px black;
+}
+
+
+.price{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px black;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 50px;
 }

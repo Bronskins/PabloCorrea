@@ -122,7 +122,7 @@ export const stock = [
         category: "Strategy",
         avatar: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3f56fe3e-72c3-4400-a377-7b1216e9afec/d9qovwo-8e265e80-b337-4a1a-b65d-30b61a373216.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNmNTZmZTNlLTcyYzMtNDQwMC1hMzc3LTdiMTIxNmU5YWZlY1wvZDlxb3Z3by04ZTI2NWU4MC1iMzM3LTRhMWEtYjY1ZC0zMGI2MWEzNzMyMTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eAiqfNwQrP_Wuk-HSm9EWoNdj50YkypU06jF7C9JvSg",
         plataformas: "Xbox One / PlayStation 4 / PC",
-        empresa: "Behaviour Interactive",
+        empresa: "FIRAXIS Games",
         lanzamiento: "04-05-2016",
         sinopsis: "XCOM 2, desarrollado por Firaxis Games y distribuido por 2K Games par PC, PlayStation 4 y Xbox One, es la secuela del galardonado título de estrategia XCOM: Enemy Unknown en la que viajamos veinte años en el futuro tras los acontecimientos de la primera entrega en un mundo dominado por los alienígenas donde tendremos que luchar para que la humanidad recupere su hogar.",
         precio: 600,
