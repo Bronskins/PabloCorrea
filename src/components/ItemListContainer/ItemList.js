@@ -6,15 +6,17 @@ export const ItemList = ({productos}) => {
 
     return (
 
-        <section className="container my-5">
-            <h2>Productos</h2>
-            <hr/>
+        <section className="container-lg d-flex my-5 flex-column">
 
-            <div className="row"> 
+            <h2 className='text-center text-uppercase text-light'>Juegos más vendidos</h2>
+            <hr className="text-info p-1"/>
+
+            <div className="row justify-content-center"> 
                 
                 {productos.map((prod) => <Item key={prod.id} {...prod}/> )} 
 
             </div>
+            <hr className="text-info p-1"/>
 
         </section>
     )

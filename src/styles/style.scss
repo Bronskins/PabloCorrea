@@ -2,6 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 0.5s
+}
+
+#root{
+    background: linear-gradient(to bottom , rgba(0, 0, 0, 0.5), rgba(62, 160, 218, 0.5)), url('https://hdqwalls.com/wallpapers/republic-of-gamers-the-biker-4k-nz.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: repeat;
 }
 
 @import 'NavBar';
+@import 'Utilities';
+@import 'Fonts';
+@import 'Animations';
+@import 'Item';
+@import 'Carousel';
+@import 'Categories';
+@import 'Footer'

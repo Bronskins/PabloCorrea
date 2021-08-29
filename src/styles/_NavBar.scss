@@ -1,22 +1,51 @@
-
 .encabezado{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
-    background-color: cornflowerblue;
+    background: linear-gradient(to right, rgba(10, 9, 9, 1), rgba(62, 160, 218, 1));
+    font-family: 'Bungee Inline', cursive;
+    border-bottom: 1px solid black;
     color: white;
 
+    & div .logo {
+        width: 55px;
+        height: 55px;
+        margin-left: 5px;
+    }
     & nav a {
         padding: 0 10px;
         text-decoration: none;
-        color: white;
+        text-shadow: 0px 0px 10px rgb(0, 153, 255);
         text-transform: uppercase;
         font-size: 22px;
+        color: white;
+        opacity: 1;
+        animation-name: opacityIn;
+        animation-delay: 2s;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: backwards; 
+        position: relative;
 
         &:hover{
-            color: blue;
+            color:rgb(33, 20, 218);
+            text-shadow: 1px 1px 3px black;
         }
+    }
+
+  
+
+    & h1 {
+        color: white;
+        opacity: 1;
+        text-shadow: 0px 0px 30px rgb(0, 153, 255);
+        animation: appear 1s, textShadow 3s;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: backwards; 
     }
 }
 

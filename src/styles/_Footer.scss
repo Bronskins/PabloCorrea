@@ -1,0 +1,23 @@
+footer{
+    border-top: 2px solid black;
+}
+
+.cargando{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 50px;
+    font-family: 'Bungee Inline', cursive;
+    animation-name: wosh;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+    animation-fill-mode: backwards;
+}
+
+.social{
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+}

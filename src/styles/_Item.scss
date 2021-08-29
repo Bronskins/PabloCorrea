@@ -1,0 +1,120 @@
+.container-lg h2 {
+    font-family: 'Bungee Inline', cursive;
+    text-shadow: 1px 1px 3px black;
+}
+
+.container-lg{
+    opacity: 1;
+    animation-name: opacityIn;
+    animation-delay: 1.5s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards; 
+}
+.container-lg .row .card .card-body .card-title{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 20px;
+}
+
+.container-lg .row .card {
+
+    & .card-effect{
+        position: relative;
+        z-index: 1;
+
+
+        &:hover .effect{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        
+  
+
+            & h3 {
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                font-family: 'Bungee Inline', cursive;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+
+}
+
+.effect{
+
+    z-index: 1;
+    animation-direction: initial;    
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    background: #00a1ff8a;
+    height: 100%;
+    animation-name: goUp;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    display: none;
+
+    & img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+    & .effect-ul {
+        list-style: none;
+
+        & span{
+            font-weight: bold;
+        }
+        & li{
+            padding: 0 15px;
+            margin: 0 auto;
+            color: white;
+            margin: 5px 0;
+
+        }
+    }
+
+}
+
+.showcase{
+    width: 500px;
+    height: 750px;
+    margin: 20px auto;
+    border: 3px solid black;
+    box-shadow: 0px 0px 30px black;
+    border-radius: 5px;
+
+    &-container{
+        margin: 30px 0;
+
+        & h2,
+        & p {
+            color: white;
+            font-family: 'Bungee Inline', cursive;
+        }
+
+        & p {
+            font-size: 20px;
+        }
+
+        & h2 {
+            font-size: 100px;
+            margin: 30px;
+            text-shadow: 0px 0px 15px black;
+        }
+    }
+}
+
+.agregar{
+    box-shadow: 0px 0px 10px black;
+}
