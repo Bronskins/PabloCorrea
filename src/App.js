@@ -7,10 +7,17 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { Carousel2 } from "./components/Carousel/Carousel"
 import { CategoriesContainer } from "./components/CategoriesContainer/CategoriesContainer";
 import { Footer } from "./components/Footer/footer";
+import { UnContext } from "./components/Context/UnContext";
+import { useState } from "react";
 
 function App() {
+
+  // Usamos un webhook de Estado y lo pasamos al Contexto para que todos los componentes puedan modificarlo.
+  const [carrito, setCarrito] = useState([])
+
   return (
     <>
+    <UnContext.Provider value={{carrito, setCarrito}}>
       <BrowserRouter>
         <NavBar/>
         <Carousel2/>
@@ -44,7 +51,7 @@ function App() {
         </Switch>
         <Footer/>
       </BrowserRouter>
-
+      </UnContext.Provider>
     </>
   );
 }

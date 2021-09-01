@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import { pedirDatos } from '../../helpers/pedirDatos'
 import { ItemList } from './ItemList'
-import { ItemDetail } from '../ItemDetailContainer/ItemDetail'
 
 export const ItemListContainer = () => {
 
@@ -10,7 +9,6 @@ export const ItemListContainer = () => {
     const { catId } = useParams(); // WebHook para recuperar los parametros en el URL. (catId)
     const [data, setData] = useState([]) // La data empieza con un array vacio
     const [loading, setLoading] = useState(false) // Seteamos el estado inicial de loading en FALSE (Loading...)
-
 
     // UseEffect que resolvera el llamado a la data
 

@@ -9,7 +9,7 @@ export const NavBar = () => {
 
             <div className="d-flex align-items-center">
                 <h1>GamingStore</h1>
-                <img className="logo" src="https://www.gamerslogo.com/wp-content/uploads/2018/03/gamer-logo-about.png"></img>
+                <img alt="Logo" className="logo" src="https://www.gamerslogo.com/wp-content/uploads/2018/03/gamer-logo-about.png"></img>
             </div>
 
 

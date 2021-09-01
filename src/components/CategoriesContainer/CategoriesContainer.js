@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { pedirDatos } from '../../helpers/pedirDatos'
 import { Categories } from './Categories'
-import { Link } from 'react-router-dom'
 
 export const CategoriesContainer = () => {
 

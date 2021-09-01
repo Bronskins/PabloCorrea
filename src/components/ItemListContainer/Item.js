@@ -9,7 +9,7 @@ export const Item = ({img, nombre, desc, avatar, category, precio, id, sinopsis,
             <div className="card-effect">
                 <img className="card-img-top border border-primary" src={img} alt={nombre}/>
                 <div className="effect">
-                    <img src={avatar}></img>
+                    <img alt="Avatar" src={avatar}></img>
                     <h3>{nombre}</h3>
                     <ul className="effect-ul">
                         <li>{sinopsis}</li>
