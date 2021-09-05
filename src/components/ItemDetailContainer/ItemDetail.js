@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { Counter } from '../Counter/Counter'
-import { UnContext } from '../Context/UnContext'
+import { CartContext } from '../Context/CartContext'
 
 export const ItemDetail = ({sinopsis, stock, empresa, plataformas, lanzamiento, category, id, nombre, precio, img, desc}) => {
 
@@ -10,22 +10,12 @@ export const ItemDetail = ({sinopsis, stock, empresa, plataformas, lanzamiento, 
     const [cantidad, setCantidad] = useState(1)
 
     // WebHook para utilizar el Contexto creado en Context/Uncontext.js 
-    const {carrito, setCarrito} = useContext(UnContext)
+    const {agregarAlCarrito} = useContext(CartContext)
 
-    // Funcion que simula agregar al carrito
-    const agregarAlCarrito = () => {
-        console.log({
-            id,nombre,category,desc,precio,sinopsis
+    const handleAdd = () => {
+        agregarAlCarrito({
+            category, id, nombre, desc, img, precio, cantidad
         })
-
-        setCarrito([
-            // No se puede hacer simplemente un push al array de carrito. 
-            // Debo enviar el estado totalmente nuevo que incluye todos los elementos que ya tenia el array + uno nuevo:
-            ...carrito, // Todos los elementos anteriores
-            {
-                id, nombre, category, desc, img, precio, cantidad, empresa, plataformas, lanzamiento // Nuevo Objeto
-            }
-        ])
     }
 
         return (
@@ -45,7 +35,7 @@ export const ItemDetail = ({sinopsis, stock, empresa, plataformas, lanzamiento, 
 
                     <h1 className="price w-50 text-center m-auto mt-5 mb-5">${precio} ARS</h1>
                     <div className="d-flex justify-content-sm-evenly align-items-center w-100">
-                        <Counter agregar={agregarAlCarrito} setCantidad={setCantidad} cantidad={cantidad} max={stock}/>
+                        <Counter agregar={handleAdd} setCantidad={setCantidad} cantidad={cantidad} max={stock}/>
                         <Link to={`/`} className="agregar btn btn-primary w-25 text-uppercase fw-bold">Volver</Link>
                     </div>
   

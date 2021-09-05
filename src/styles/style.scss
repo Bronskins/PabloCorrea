@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: 0.5s
+    transition: all 0.5s;
 }
 
 #root{
@@ -19,4 +19,5 @@
 @import 'Item';
 @import 'Carousel';
 @import 'Categories';
-@import 'Footer'
+@import 'Footer';
+@import 'CartWidget';

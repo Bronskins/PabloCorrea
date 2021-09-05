@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { CartWidget } from '../CartWidget/CartWidget'
 
 export const NavBar = () => {
 
@@ -13,10 +14,10 @@ export const NavBar = () => {
             </div>
 
 
-            <nav>
+            <nav className="navbar d-flex align-items-center justify-content-xl-between">
                 <Link to={"/"}>Inicio</Link>
                 <Link to={"/nosotros"}>Nosotros</Link>
-                <Link to={"/cart"}>Carrito</Link>
+                <CartWidget/>
             </nav>
 
         </header>
