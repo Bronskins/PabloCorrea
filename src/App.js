@@ -7,38 +7,18 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { Carousel2 } from "./components/Carousel/Carousel"
 import { CategoriesContainer } from "./components/CategoriesContainer/CategoriesContainer";
 import { Footer } from "./components/Footer/footer";
-import { CartContext } from "./components/Context/CartContext";
-import { useState } from "react";
+import { CartProvider } from "./components/Context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
+import { UIContextProvider } from "./components/Context/UIContext";
 
 function App() {
 
-  // Usamos un webhook de Estado y lo pasamos al Contexto para que todos los componentes puedan modificarlo.
-  const [carrito, setCarrito] = useState([])
-
-  const agregarAlCarrito = (prod) => {
-    setCarrito([
-      ...carrito,
-      prod
-    ])
-  }
-
-  const eliminarDelCarrito = (id) => {
-    setCarrito( carrito.filter(prod => prod.id !== id) )
-  }
-
-  const cantidadCarrito = () => {
-    return carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
-  }
-
-  const vaciarCarrito = () => {
-    setCarrito([])
-  }
 
   return (
     <>
-    <CartContext.Provider value={{carrito, agregarAlCarrito, eliminarDelCarrito, vaciarCarrito, cantidadCarrito}}>
-      <BrowserRouter>
+    <UIContextProvider>
+      <CartProvider>
+        <BrowserRouter>
         <NavBar/>
         <Carousel2/>
         <CategoriesContainer/>
@@ -67,7 +47,8 @@ function App() {
         </Switch>
         <Footer/>
       </BrowserRouter>
-      </CartContext.Provider>
+      </CartProvider>
+    </UIContextProvider>
     </>
   );
 }

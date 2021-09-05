@@ -9,7 +9,7 @@ export const CartWidget = () => {
 
     return (
         <Link to="/cart">
-        <div className="d-flex align-items-center cart-widget">
+        <div className="cart-widget">
             <FaShoppingCart/>
             <span>{cantidadCarrito()}</span>
         </div>

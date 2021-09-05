@@ -1,14 +1,16 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import { pedirDatos } from '../../helpers/pedirDatos'
 import { ItemList } from './ItemList'
+import { UIContext } from '../Context/UIContext'
 
 export const ItemListContainer = () => {
 
     // Se puede usar 'parametros' sin desestructurar para obtener el objeto completo de parametros.
     const { catId } = useParams(); // WebHook para recuperar los parametros en el URL. (catId)
     const [data, setData] = useState([]) // La data empieza con un array vacio
-    const [loading, setLoading] = useState(false) // Seteamos el estado inicial de loading en FALSE (Loading...)
+    /* const [loading, setLoading] = useState(false) // Seteamos el estado inicial de loading en FALSE (Loading...) */
+    const {loading, setLoading} = useContext(UIContext)
 
     // UseEffect que resolvera el llamado a la data
 
